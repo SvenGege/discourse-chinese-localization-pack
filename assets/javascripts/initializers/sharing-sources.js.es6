@@ -20,7 +20,7 @@ function addSharingSources() {
     faIcon: 'fa-weibo',
     title: I18n.t('share.weibo'),
     generateUrl(link, title) {
-      return "http://service.weibo.com/share/share.php?url=" + encodeURIComponent(link) + "&title=" + encodeURIComponent(title);
+      return "https://service.weibo.com/share/share.php?url=" + encodeURIComponent(link) + "&title=" + encodeURIComponent(title);
     },
     shouldOpenInPopup: true,
     popupHeight: 370
@@ -39,10 +39,10 @@ function addSharingSources() {
 
   Sharing.addSource({
     id: 'wechat',
-    faIcon: 'fa-weixin',
+    faIcon: 'fa-qrcode',
     title: I18n.t('share.wechat'),
     generateUrl(link) {
-      return "http://s.jiathis.com/qrcode.php?url=" + encodeURIComponent(link);
+      return "https://www.addtoany.com/ext/wechat/share/#url=" + encodeURIComponent(link);
     },
     shouldOpenInPopup: true,
     popupHeight: 200
@@ -65,7 +65,7 @@ function addSharingSources() {
     title: I18n.t('share.qzone'),
     generateUrl(link, title) {
       // http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://meta.discoursecn.org&desc=TestApi&title=theApiTest&pics=https://dn-discoursecn.qbox.me/uploads/default/4/ead61e7ddc99b2e6.png&site=http://meta.discoursecn.org
-      return "http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=" + encodeURIComponent(link) + "&title=" + encodeURIComponent(title) + "&desc=" + encodeURIComponent(title);
+      return "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=" + encodeURIComponent(link) + "&title=" + encodeURIComponent(title) + "&desc=" + encodeURIComponent(title);
     },
     shouldOpenInPopup: true,
     popupHeight: 200
