@@ -61,7 +61,7 @@ function addSharingSources() {
 
   Sharing.addSource({
     id: 'qzone',
-    faIcon: 'fa-qzone', // need a image
+    faIcon: 'fa-qq', // need a image
     title: I18n.t('share.qzone'),
     generateUrl(link, title) {
       // http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://meta.discoursecn.org&desc=TestApi&title=theApiTest&pics=https://dn-discoursecn.qbox.me/uploads/default/4/ead61e7ddc99b2e6.png&site=http://meta.discoursecn.org
@@ -73,7 +73,7 @@ function addSharingSources() {
 
   Sharing.addSource({
     id: 'douban',
-    faIcon: 'fa-douban', // need a image
+    faIcon: '豆', // need a image
     title: I18n.t('share.douban'),
     generateUrl(link, title) {
       return "https://shuo.douban.com/!service/share?href" + encodeURIComponent(link) + "&name=" + encodeURIComponent(title) + "&text=" + encodeURIComponent(title);
