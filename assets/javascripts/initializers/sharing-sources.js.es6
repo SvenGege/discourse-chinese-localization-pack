@@ -62,7 +62,7 @@ function addSharingSources() {
   Sharing.addSource({
     id: 'qzone',
     // faIcon: 'fa-qq', // need a image
-    htmlIcon: '<img src="https://chinastolz.de/uploads/default/original/1X/6ac0dbef1fa00cfadbdfe10060614a155e4e3313.png">',
+    htmlIcon: '<img src="https://chinastolz.de/uploads/default/original/1X/f88956e31854c94b9c9ca1c8de715a024aadb352.svg">',
     title: I18n.t('share.qzone'),
     generateUrl(link, title) {
       // http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://meta.discoursecn.org&desc=TestApi&title=theApiTest&pics=https://dn-discoursecn.qbox.me/uploads/default/4/ead61e7ddc99b2e6.png&site=http://meta.discoursecn.org
@@ -75,10 +75,10 @@ function addSharingSources() {
   Sharing.addSource({
     id: 'douban',
     // faIcon: '豆', // need a image
-    htmlIcon: '<img src="https://chinastolz.de/uploads/default/original/1X/df4773aef913f5eb13598809f54f27f737e7ce53.png">',
+    htmlIcon: '<img src="https://chinastolz.de/uploads/default/original/1X/7244d76f49737126c40cda914daf446bdff3d04d.svg">',
     title: I18n.t('share.douban'),
     generateUrl(link, title) {
-      return "http://shuo.douban.com/!service/share?href" + encodeURIComponent(link) + "&name=" + encodeURIComponent(title) + "&text=" + encodeURIComponent(title);
+      return "https://shuo.douban.com/!service/share?href" + encodeURIComponent(link) + "&name=" + encodeURIComponent(title) + "&text=" + encodeURIComponent(title);
     },
     shouldOpenInPopup: true,
     popupHeight: 200
