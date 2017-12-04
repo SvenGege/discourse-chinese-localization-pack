@@ -45,7 +45,7 @@ function addSharingSources() {
       return "https://www.addtoany.com/ext/wechat/share/#url=" + encodeURIComponent(link);
     },
     shouldOpenInPopup: true,
-    popupHeight: 200
+    popupHeight: 400
   });
 
   Sharing.addSource({
